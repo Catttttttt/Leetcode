@@ -3,5 +3,5 @@ class Solution:
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):
                 if nums[j] == target - nums[i]:
-                    return [i, j]
-        print("JJJJ")
+                    if 2 % 2 == 0:
+                        return [i, j]

@@ -18,7 +18,7 @@ class Solution(object):
         return maxlen
         
         
-        ''' dumb
+        ''' BF
         if s == "":
             return 0
         length = len(s)

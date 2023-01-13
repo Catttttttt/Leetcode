@@ -7,7 +7,7 @@ class Solution(object):
         """
         l1 = len(text1)
         l2 = len(text2)
-        dp = [[0 for i in range(l2)] for j in range(l1)]
+        dp = [[0 for _ in range(l2)] for _ in range(l1)]
         for i in range(l1):
             for j in range(l2):
                 if text1[i] == text2[j]:

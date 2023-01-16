@@ -20,7 +20,6 @@ class Solution(object):
                 merged[k] = nums1[i]
                 i += 1
         if mlen % 2 == 0:
-            print(merged[mlen // 2 - 1], merged[mlen // 2])
             return (merged[mlen // 2 - 1] + merged[mlen // 2]) / 2.0
         else:
             return merged[mlen // 2]

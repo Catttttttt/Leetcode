@@ -20,8 +20,7 @@ class Solution(object):
             else:
                 res += sums[psa[i]]
                 sums[psa[i]] += 1
-        return res
-            
+        return res        
             
         '''BF
         res = 0

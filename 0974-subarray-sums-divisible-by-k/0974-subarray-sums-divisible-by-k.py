@@ -5,6 +5,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        '''
         l = len(nums)
         res = 0
         psa = [0 for _ in range(l)]
@@ -20,7 +21,15 @@ class Solution(object):
             else:
                 res += sums[psa[i]]
                 sums[psa[i]] += 1
-        return res        
+        return res  ''' 
+        res = 0
+        prefix = 0
+        count = [1] + [0] * k
+        for a in nums:
+            prefix = (prefix + a) % k
+            res += count[prefix]
+            count[prefix] += 1
+        return res
             
         '''BF
         res = 0
